@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    width:100vw;
+    /* background-color: hsl(0, 0%, 75%); */
+}
+#home{
+    padding:50px;
+    /* background: url(../images/bg-curvy-desktop.svg); */
+
+}
+ul{
+    float: right;
+    display: flex;
+    font-family: "Raleway",sans-serif;
+}
+a{
+    text-decoration: none;
+    color:grey;
+    margin:0 10px;
+
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    /* display: inline; */
+}
+li:hover{
+    font-weight: 700;
+    color:black;
+    border-bottom:1px solid black;
+}
+.intro{
+    margin:150px 0;
+ display: flex;
+ text-align: center;
+}
+.intro #started{
+    /* margin:20px auto; */
+    padding:20px;
+    width:200px;
+}
+.intro img,.productive img{
+    width: clamp(350px, 50vw, 650px);
+    transform: translateY(-40px);
+}
+h1{
+     font-family: "Raleway",sans-serif;
+     font-size: 2rem;
+     font-weight: 700;
+}
+p{
+    
+    font-size: 18px;
+}
+.productive{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px;
+    margin:100px auto;
+    width:90%;
+}
+
+#text
+{
+    width:100%;
+    text-align: left;
+}
+#text h1,p{
+    text-align: left;
+}
+#text a{
+    padding:5px 0;
+    margin:0;
+    color:hsl(224, 93%, 58%);
+    border-bottom: 1px solid hsl(224, 93%, 58%);
+}
+#text a:hover {color:black; border-bottom: 1px solid black;}
+#entry{
+    
+    margin:auto;
+    width:fit-content;
+    /* padding:50px; */
+}
+input{
+    width:350px;
+    height:45px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin:10px 0;
+}
+#started
+{
+    padding:15px 20px;
+    background-color:hsl(224, 93%, 58%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    color:white;
+    margin:10px;
+    width:150px;
+    text-align: center;
+}
+input:focus{
+    outline:none;
+}
+#text #entry{
+    display: flex;
+}
+#text #entry input{
+    width:350px;
+}
+#text #entry #started{
+    height:20px;
+    padding:15px 0;
+}
+#card
+{
+    width:300px;
+    padding:20px;
+    font-size: 14px;
+    margin-top: 20px;
+    box-shadow:3px 2px 5px 2px #ccc; 
+    /* background-color:  hsl(219, 30%, 18%); */
+}
+
+#team{
+    height:20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin:10px 0;
+}
+
+#post{
+    font-weight: 400;
+    font-size: 8px;
+    color:grey;
+    margin-left:40px;
+}
+#team img{
+    height:100%;
+    border-radius:50%;
+    margin:0 10px;
+    width:20px;
+    transform: translateY(10px);
+}
+#signin{
+    background-color:hsl(238, 22%, 44%);
+    margin-top:100px;
+    padding:60px;
+    text-align: left;
+    color:white;
+    /* transform: translateY(50%); */
+    display: flex;
+}
+#signin #heading{
+    margin:10px;
+    font-size:40px;
+    font-weight: 700;  
+}
+#para{
+    font-size: 14px;
+    margin:20px;
+    width:50vw;
+}
+
+
+footer
+{
+    height:fit-content;
+    padding:50px;
+    color:white;
+    background-color:hsl(216, 53%, 9%) ;
+}
+footer img{
+    margin-top:100px;
+}
+#contact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:100vw;
+    margin:50px auto;
+    grid-gap:auto;
+
+}
+#cards{
+    width:250px;
+}
+i{
+    width:20px;
+    height:20px;
+    padding:2px;
+    font-size: 20px;
+    text-align: center;
+    margin:0 10px;
+}
+@media (max-width:800px)
+{#home{
+        padding:20px 10px;
+    }
+    .intro,.productive{
+        width:100%;
+    }
+    .intro{
+        padding:50px;
+        flex-direction: column;
+        margin:0;
+    }
+    .intro #entry{
+        flex-direction: column;
+    }
+    #contact{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .productive{
+        display: block;
+        padding:50px;
+        margin-top: 10px;
+    }
+    footer{
+        height:fit-content;
+        padding-left:50px;
+        width:100vw;
+    }
+    .intro img,.productive img{
+        width:95vw;
+    }
+    #signin
+    {
+        flex-direction:column;
+        width:100%;
+    }
+    #signin input{
+        width:90vw;
+    }
+    .intro img,.productive img{
+        margin-top:100px;
+    }
+    #footer img{
+        margin:10px;
+        color:white;
+    }
+    #para{
+        width:90vw;
+    }
+}
+@media (max-width:650px)
+{
+    #contact{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+    }
+}
+@media (max-width:500px){
+    #contact{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:20px;
+    }
+    ul{
+        transform: translateY(-50px) translateX(35px);
+    }
+}
